@@ -9,7 +9,7 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 from aiogram.client.session.aiohttp import AiohttpSession
 # --- መረጃዎችን እዚህ ይተኩ ---
-TOKEN = "8380663114:AAEtyD1GTladoxB12h7SM0EBe8-M_fdAONs"
+TOKEN = "8380663114:AAFff3_NSD7PMhHghRAbNI11KsgqFDL8EXY"
 ADMIN_ID = 8412701064  # ያንተን የቴሌግራም ID ቁጥር እዚህ አስገባ
 # ----------------------------
 
@@ -96,4 +96,5 @@ async def main():
     
     # ቦቱን በProxy አማካኝነት ማስነሳት
     bot = Bot(token=TOKEN, session=session)
+
     await dp.start_polling(bot)
